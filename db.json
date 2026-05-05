@@ -1,0 +1,85 @@
+{
+  "stats": {
+    "dashboard": {
+      "totalRevenue": { "value": 842390, "trend": 14.2 },
+      "activeOrders": { "value": 156, "trend": 8.5 },
+      "newCustomers": { "value": 1240, "trend": 22.1 },
+      "inventoryAlerts": { "value": 12, "trend": -5.4 }
+    },
+    "customers": {
+        "total": 4520,
+        "active": 3840,
+        "vip": 420,
+        "churned": 260
+    }
+  },
+  "activities": [
+    { "id": "1", "customerName": "John Doe", "email": "john@example.com", "action": "Order #ORD-8429", "date": "Oct 24, 2023", "total": 299.00, "status": "Completed", "avatar": "JD" },
+    { "id": "2", "customerName": "Alice Smith", "email": "alice.s@server.com", "action": "Order #ORD-8430", "date": "Oct 23, 2023", "total": 1450.00, "status": "Processing", "avatar": "AS" },
+    { "id": "3", "customerName": "Robert King", "email": "rking@globex.co", "action": "Order #ORD-8431", "date": "Oct 22, 2023", "total": 89.99, "status": "Shipped", "avatar": "RK" },
+    { "id": "4", "customerName": "Mark Taylor", "email": "m.taylor@tech.org", "action": "Order #ORD-8432", "date": "Oct 22, 2023", "total": 520.00, "status": "Cancelled", "avatar": "MT" }
+  ],
+  "customers": [
+    { "id": "u1", "name": "Julian Thorne", "email": "julian.t@lux.com", "tier": "Platinum", "status": "Active", "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Julian", "totalSpent": 12400.50, "lastOrderDate": "2023-10-24" },
+    { "id": "u2", "name": "Elena Rodriguez", "email": "elena.rod@web.com", "tier": "Gold", "status": "Active", "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Elena", "totalSpent": 5420.00, "lastOrderDate": "2023-10-20" },
+    { "id": "u3", "name": "Marcus Vane", "email": "marcus.v@gmail.com", "tier": "Silver", "status": "Inactive", "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Marcus", "totalSpent": 850.00, "lastOrderDate": "2023-08-15" },
+    { "id": "u4", "name": "Sarah Jenkins", "email": "s.jenkins@outlook.com", "tier": "Standard", "status": "Active", "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah", "totalSpent": 120.00, "lastOrderDate": "2023-10-22" }
+  ],
+  "products": [
+    { "id": "p1", "name": "Aero Carbon X9", "description": "Professional grade carbon fibre frame cycling machine.", "category": "Equipment", "price": 4200.00, "stock": 14, "sku": "CYC-X9-BLK", "status": "Available", "image": "https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&q=80&w=200" },
+    { "id": "p2", "name": "Zenith Mesh Sneakers", "description": "Ultra-lightweight breathable running shoes.", "category": "Footwear", "price": 129.99, "stock": 4, "sku": "RUN-ZEN-01", "status": "Low Stock", "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=200" },
+    { "id": "p3", "name": "Titanium Smartwatch", "description": "Rugged fitness tracker with sapphire glass.", "category": "Electronics", "price": 599.00, "stock": 0, "sku": "WAT-TIT-09", "status": "Out of Stock", "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=200" }
+  ],
+  "orders": [
+    { 
+      "id": "ORD-8429", 
+      "customerId": "u1", 
+      "customerName": "Julian Thorne", 
+      "items": [{ "productId": "p1", "name": "Aero Carbon X9", "quantity": 1, "price": 4200.00 }], 
+      "total": 4200.00, 
+      "status": "Paid", 
+      "createdAt": "2023-10-24T14:20:00Z" 
+    }
+  ],
+  "chartData": [
+    { "day": "Mon", "value": 420 },
+    { "day": "Tue", "value": 680 },
+    { "day": "Wed", "value": 940 },
+    { "day": "Thu", "value": 720 },
+    { "day": "Fri", "value": 890 },
+    { "day": "Sat", "value": 1200 },
+    { "day": "Sun", "value": 1100 }
+  ],
+  "settings": {
+    "localization": { "language": "English (UK)", "region": "United Kingdom" },
+    "quickConfig": { "twoFactorAuth": true, "maintenanceMode": false, "emailNotifications": true }
+  },
+  "auth": {
+    "users": [
+      {
+        "id": "admin-1",
+        "email": "kacouesdras@gmail.com",
+        "password": "password123",
+        "name": "Alex Rivera",
+        "role": "Admin",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Alex"
+      },
+      {
+        "id": "support-1",
+        "email": "support@lumina.com",
+        "password": "password123",
+        "name": "Sarah Connor",
+        "role": "Support",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah"
+      },
+      {
+        "id": "inventory-1",
+        "email": "inventory@lumina.com",
+        "password": "password123",
+        "name": "James Bond",
+        "role": "Inventory",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=James"
+      }
+    ]
+  }
+}
